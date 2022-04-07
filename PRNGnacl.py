@@ -1,6 +1,7 @@
 import nacl
 from nacl import utils
-prnum = nacl.utils.random(size = 32)
+s = int(input("Tamaño del numero [byte]? "))
+prnum = nacl.utils.random(size = s)
 print(prnum)
 hexa = ""
 for i in range(0,len(prnum),1):
